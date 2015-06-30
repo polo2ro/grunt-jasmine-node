@@ -20,6 +20,7 @@ module.exports = function (grunt) {
         extensions: 'js',
         showColors: true,
         includeStackTrace: true,
+        captureExceptions: false,
         useHelpers: false,
         teamcity: false,
         coffee: false,
@@ -77,6 +78,7 @@ module.exports = function (grunt) {
         regExpSpec:   regExpSpec,
         junitreport: options.jUnit,
         includeStackTrace: options.includeStackTrace,
+        captureExceptions: options.captureExceptions,
         coffee: options.coffee,
         growl: options.growl
       };
